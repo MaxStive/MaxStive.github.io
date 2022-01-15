@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+    var now = new Date();
+        var dateString = now.toString();
+        var theYear = now.getFullYear();
+        var theDayOfWeak = now.getDay();
+
+        alert(dateString + ", " + theYear + ", " + theDayOfWeak);
+
+        var birthday = new Date("May 1, 1983 08:03 pm");
+        var dateString1 = birthday.toString();
+        var theYear1 = birthday.getFullYear();
+        var theDayOfWeak1 = birthday.getDay();
+
+        alert(dateString1 + ", " + theYear1 + ", " + theDayOfWeak1);
+
+       
+    function Coffee(roast, ounces) {
+            this.roast = roast;
+            this.ounces = ounces;
+            this.getSize = function () {
+                if (this.ounces === 8) { return "small"; }
+                if (this.ounces === 12) { return "medium"; }
+                else if (this.ounces === 16) { return "large"; }
+            };
+            this.toString = function () { return "you've order a " + this.getSize() + " " + this.roast + " coffee." }
+        }
+        var coffee = new Coffee("House Blend", 12);
+        console.log(coffee.toString());
+        var darkRoast = new Coffee("Dark Roast", 16);
+        console.log(darkRoast.toString());
+        var DarkTea = new Coffee("Dark Tea", 16);
+        console.log(DarkTea.toString());
+        var x = false;
+        var z = "Qwerty";
+        var c = 0;
+        var v = 0;
+        while (true) { c = prompt("password"); if (z == c) { break; } else if (z != c) { alert("nothing"); v = v++;} }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>window.onload = function () {
+    var pol = prompt("what");
+    var what = parseInt(pol);
+    var text = document.getElementById("mes")
+    text.innerHTML = "0, 1"
+    x = 0;
+    y = 1;
+    sum = x + y;
+    for (var p = 0; p < pol; p++) {
+        text.innerHTML = text.innerHTML + ',  ' + sum;
+        x = y;
+        y = sum;
+        sum = x + y;
+    }};
+        var dog = {
+            name: "this is fine",
+            breed: "fire",
+            weight: 38,
+            bark: "this is fine"
+        };
+        function Dog(name, breed, weight) {
+        this.name = name;
+            this.breed = breed;
+            this.weight = weight;
+            this.bark = function () {
+                if (this.weight > 25) { alert(this.name + " says woooooooof!!!"); } else {alert(this.name+" says yiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiip") }
+            };
+        }
+        var fibo = new Dog("fibo","mix",338)
+        var fluffy = new Dog("flufy","Poodle",10)
+        var spot = new Dog("spot","chihuahua",10)
+        var dogs = [fibo, fluffy, spot]
+        for (var t = 0; t < dogs.length; t++) { dogs[t].bark(); }
+        if (fibo instanceof Dog) { console.log("fibo is dog") }
+        var shrekDogParms = {
+            breed: "Осёл",
+            weight: 3333,
+            name: "Осёл"
+        }
+        var Shrek = new Dog(shrekDogParms)
+        Shrek.bark();
+    </script>
+</head>
+<body>
+    <div id="mes"></div>
+</body>
+</html>

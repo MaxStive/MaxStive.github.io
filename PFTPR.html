@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+            <title></title>
+    <style>
+        body, button {
+            margin: 10px;
+        }
+
+        div {
+            padding: 10px;
+        }
+    </style>
+    <script>
+        
+        //window.onload = function () {
+          //  var count = 0;
+             //var message = "clack";
+            //var div = document.getElementById("message");
+            //var button = document.getElementById("clack");
+            //button.onclick = function () {
+              //  count++;
+                //div.innerHTML = message + count + " time"
+            //};
+            
+        //};
+        var i = prompt("time of fibonachi")
+        var w1 = 0;
+        var w2 = 1;
+        var w3 = w1 +w2;
+        for (var t = 0; t < i; t++) { w1 = w2; w2 = w3; w3 =w1+w2 }
+        alert (w2)
+    </script>
+</head>
+<body>
+    <button id="clack">Click me</button>
+    <div id="message"></div>
+</body>
+</html>
